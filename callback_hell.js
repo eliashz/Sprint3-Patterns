@@ -16,8 +16,10 @@ const reverseText = str =>
   .join("");
 
 // Read and reverse contents of text files in a directory
-readdir(inbox, (error, files) => {
+
+ readdir(inbox, (error, files) => {
   if (error) return console.log("Error: Folder inaccessible");
+  console.log(files)
   files.forEach(file => {
     readFile(join(inbox, file), "utf8", (error, data) => {
       if (error) return console.log("Error: File error");
@@ -27,4 +29,4 @@ readdir(inbox, (error, files) => {
       });
     });
   });
-});
+}); 
