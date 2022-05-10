@@ -16,16 +16,27 @@ const reverseText = str =>
     .join("");
 
 // Read and reverse contents of text files in a directory
-const leerDirectorio = (files, inbox) => {
-return new Promise((resolve, reject) => {
-    readdir(inbox, (error, files))
-    if (error) {
-    reject("Error: Folder inaccessible");
-    } else {
-    resolve()
-    }
-});
+const leerDirectorio = (inbox) => {
+    return new Promise((resolve, reject) => {
+        readdir(inbox, (error, files) => {
+            if (error) {
+                reject("Error: Folder inaccessible");
+            } else {
+                resolve(files)
+            }
+        });
+    });
 }
 
-leerDirectorio(files, inbox)
-    .then (files )
+const leerArchivo = (files, inbox) => {
+    return new Promise ((resolve, reject) => {
+        
+    }
+}    
+
+      
+
+
+leerDirectorio (inbox)
+    .then(files => console.log(files))
+    .catch(err => console.log(err))
