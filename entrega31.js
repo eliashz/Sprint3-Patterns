@@ -27,24 +27,27 @@ const leerDirectorio = (inbox) => {
     });
 }
 
-const leerArchivo = (files, inbox) => {
+const leerArchivo = (files) => {
     return new Promise ((resolve, reject) => {
         files.forEach(file => {
             readFile(join(inbox, file), "utf8", (error, data) => {
                 if (error) {
                     reject("Error: File error")
                 }  
-                resolve(file) 
-            });
-        })
+                resolve(data);
+            });        
+        })       
     })
 };    
+
+const escribirArchivo = (data) 
 
 const archivo = async (inbox) => {
     try {
         const files = await leerDirectorio(inbox);
-        const file = await recorrerCarpeta(files)
-        const data = await leerArchivo()
+        //const file = await recorrerCarpeta(files)
+        const data = await leerArchivo(files);
+        
     } catch (error) {
         throw error;
     }
