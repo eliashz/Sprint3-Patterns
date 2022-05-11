@@ -1,4 +1,3 @@
-const { Resolver } = require("dns");
 const {
     readdir,
     readFile,
