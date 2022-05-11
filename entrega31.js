@@ -40,9 +40,16 @@ const leerArchivo = (files, inbox) => {
     })
 };    
 
+const archivo = async (inbox) => {
+    try {
+        const files = await leerDirectorio(inbox);
+        const file = await recorrerCarpeta(files)
+        const data = await leerArchivo()
+    } catch (error) {
+        throw error;
+    }
+}
       
-leerDirectorio (inbox)
-    .then(files => leerArchivo(files, inbox))
-    .then(file => console.log(file))
-    
-    .catch(err => console.log(err))
+archivo (inbox)
+    .then(mensaje => console.log(mensaje))
+    .catch (err => console.log(err))
