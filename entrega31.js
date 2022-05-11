@@ -25,16 +25,16 @@ const leerDirectorio = (inbox) => {
             resolve(files)    
         });
     });
-}
+};
 
-const leerArchivo = (files) => {
+const leerArchivo = (files, inbox) => {
     return new Promise ((resolve, reject) => {   
         files.forEach(file => {
             readFile(join(inbox, file), "utf8", (error, data) => {
                 if (error) {
                     reject("Error: File error")
                 }  
-                resolve (file);  
+                resolve ([data, file]);  
             });   
         });           
     })
@@ -46,21 +46,18 @@ const escribirArchivo = (data, file) => {
             if (error) {
                 reject("Error: File could not be saved!");
             }
-            
-            resolve(file)
+            resolve(`${file} was successfully saved in the outbox!`);
           });
-    })
-}
+    });
+};
 
 const archivo = async (inbox) => {
     try {
         const files = await leerDirectorio(inbox);
         //const file = await recorrerCarpeta(files)
-        const file = await leerArchivo(files);  
-        console.log(file); 
-        const archivo = await escribirArchivo(file)
-     
-        return `${archivo} was successfully saved in the outbox!`
+        const dataFile = await leerArchivo(files, inbox);  
+        return await escribirArchivo(dataFile[0], dataFile[1]);
+        
     } catch (error) {
         throw error;
     }
@@ -68,4 +65,4 @@ const archivo = async (inbox) => {
       
 archivo (inbox)
     .then(mensaje => console.log(mensaje))
-    .catch (err => console.log(err))
+    .catch(err => console.log(err))
