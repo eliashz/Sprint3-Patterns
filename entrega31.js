@@ -21,22 +21,28 @@ const leerDirectorio = (inbox) => {
         readdir(inbox, (error, files) => {
             if (error) {
                 reject("Error: Folder inaccessible");
-            } else {
-                resolve(files)
-            }
+            } 
+            resolve(files)    
         });
     });
 }
 
 const leerArchivo = (files, inbox) => {
     return new Promise ((resolve, reject) => {
-        
-    }
-}    
+        files.forEach(file => {
+            readFile(join(inbox, file), "utf8", (error, data) => {
+                if (error) {
+                    reject("Error: File error")
+                }  
+                resolve(file) 
+            });
+        })
+    })
+};    
 
       
-
-
 leerDirectorio (inbox)
-    .then(files => console.log(files))
+    .then(files => leerArchivo(files, inbox))
+    .then(file => console.log(file))
+    
     .catch(err => console.log(err))
