@@ -1,3 +1,4 @@
+// Nivell 1: Callback Hell
 const {
     readdir,
     readFile,
@@ -53,7 +54,6 @@ const escribirArchivo = (data, file) => {
 const archivo = async (inbox) => {
     try {
         const files = await leerDirectorio(inbox);
-        //const file = await recorrerCarpeta(files)
         const dataFile = await leerArchivo(files, inbox);  
         return await escribirArchivo(dataFile[0], dataFile[1]);
         
@@ -65,3 +65,5 @@ const archivo = async (inbox) => {
 archivo (inbox)
     .then(mensaje => console.log(mensaje))
     .catch(err => console.log(err))
+
+//Nivell 2: Singleton
