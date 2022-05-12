@@ -1,4 +1,5 @@
 // Nivell 1: Callback Hell
+
 const {
     readdir,
     readFile,
@@ -67,3 +68,14 @@ archivo (inbox)
     .catch(err => console.log(err))
 
 //Nivell 2: Singleton
+
+class Singleton {
+    private static instante: Singleton;
+
+    private constructor() { }
+
+    public static getInstance(): Singleton {
+        if(!Singleton.instance) {
+            Singleton.instance = new Singleton()
+        }
+    }
