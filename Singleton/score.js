@@ -1,16 +1,16 @@
-//let score = require('./score.js');
+//let score = require('./scoreboard.js');
 
 class Singleton {
     static instancia;
-    score = '';
+    scoreboard = '';
 
-    constructor(score ='') {
+    constructor(scoreboard ='') {
         if (!!Singleton.instancia) {
             return Singleton.instancia;
         }
 
         Singleton.instancia = this;
-        this.score = score;
+        this.scoreboard = scoreboard;
 
         return this;
     }
@@ -18,4 +18,4 @@ class Singleton {
 
 const final = new Singleton('1-2')
 
-console.log(`El resultado es: ${final.score}`);
+console.log(`El resultado es: ${final.scoreboard}`);
