@@ -1,27 +1,36 @@
-let score = require('./game.js');
+//let score = require('./game.js');
 
 class Player {
-    constructor (name, team, score) {
+    constructor (name, team) {
         this.name = name;
         this.team = team;
-        this.score = score;
     }
 }
 
-const player1 = new Player("Elías", "Red");
-const player2 = new Player("Berta", "Blue");
+let player1 = new Player("Elías", "Red");
+let player2 = new Player("Berta", "Blue");
 
-class Game extends Player {
-    constructor (name, team, score) {
-        this.gambler1 = gambler1;
-        this.gambler2 = gambler2;
-        this.journey = journey;
+class Game {
+    constructor (player1, player2, result, score) {
+        this.player1 = player1;
+        this.player2 = player2;
+        this.result1 = '';
+        this.result2 = '';
+        this.score = '';
     }
     
     play() {
-        console.log(Math.random());
+        const game = ['rock', 'paper', 'scissors'];
+        this.result1 = game[Math.floor(Math.random()*game.length)];
+        this.result2 = game[Math.floor(Math.random()*game.length)];
     }
 }
 
-player1 = new Player(null, null, 1)
-console.log(player1);
+let game1 = new Game (player1.name, player2.name);
+game1.play();
+
+const rps = () => {
+    if ()
+}
+
+console.log(game1);
