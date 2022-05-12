@@ -16,7 +16,8 @@ class Game {
         this.player2 = player2;
         this.result1 = '';
         this.result2 = '';
-        this.score = '';
+        this.score1 = '';
+        this.score2 = '';
     }
     
     play() {
@@ -29,8 +30,17 @@ class Game {
 let game1 = new Game (player1.name, player2.name);
 game1.play();
 
-const rps = () => {
-    if ()
-}
+const rockPaperScissors = (game) => {
 
-console.log(game1);
+    if (game.result1 === game.result2) {
+        console.log("Empate"); 
+    } else if (((game.result1 == 'rock') && (game.result2 == 'scissors')) || ((game.result1 == 'paper') && (game.result2 == 'scissors')) || ((game.result1 == 'scissors') && (game.result2 == 'paper'))){
+        
+        console.log("Elías");
+    } else {
+        score2++; 
+        console.log("Berta", score2);
+    }}
+
+
+rockPaperScissors(game1)
