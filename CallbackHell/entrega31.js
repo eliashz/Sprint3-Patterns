@@ -66,16 +66,3 @@ const archivo = async (inbox) => {
 archivo (inbox)
     .then(mensaje => console.log(mensaje))
     .catch(err => console.log(err))
-
-//Nivell 2: Singleton
-
-class Singleton {
-    private static instante: Singleton;
-
-    private constructor() { }
-
-    public static getInstance(): Singleton {
-        if(!Singleton.instance) {
-            Singleton.instance = new Singleton()
-        }
-    }
