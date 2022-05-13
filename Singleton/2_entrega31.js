@@ -1,3 +1,5 @@
+//Nivell 2: Singleton
+
 class Player {
     constructor (name, team) {
         this.name = name;
