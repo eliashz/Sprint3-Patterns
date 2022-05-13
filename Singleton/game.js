@@ -1,5 +1,3 @@
-//let score = require('./game.js');
-
 class Player {
     constructor (name, team) {
         this.name = name;
@@ -7,8 +5,8 @@ class Player {
     }
 }
 
-let player1 = new Player("Elías", "Red");
-let player2 = new Player("Berta", "Blue");
+let player1 = new Player("Elías", "Red Team");
+let player2 = new Player("Berta", "Blue Team");
 
 class Game {
     constructor (player1, player2, result, score) {
@@ -21,7 +19,7 @@ class Game {
     }
     
     play() {
-        const game = ['rock', 'paper', 'scissors'];
+        const game = ['Rock', 'Paper', 'Scissors'];
         this.result1 = game[Math.floor(Math.random()*game.length)];
         this.result2 = game[Math.floor(Math.random()*game.length)];
     }
@@ -29,41 +27,58 @@ class Game {
 
 let game1 = new Game (player1.name, player2.name);
 let game2 = new Game (player1.name, player2.name);
+let game3 = new Game (player1.name, player2.name);
 
+let score1 = score2 = 0;
+
+console.log("****** Rock-paper-scissors Best of 3! ******");
 
 const rockPaperScissors = (game) => {
     if (game.result1 === game.result2) {
-        console.log("Empate"); 
-    } else if (((game.result1 == 'rock') && (game.result2 == 'scissors')) || ((game.result1 == 'paper') && (game.result2 == 'scissors')) || ((game.result1 == 'scissors') && (game.result2 == 'paper'))){     
-        console.log("Elías");
+        console.log(`${game.result1} vs ${game.result2}: Draw!`); 
+    } else if (((game.result1 === 'Rock') && (game.result2 === 'Scissors')) || ((game.result1 === 'Paper') && (game.result2 === 'Rock')) || ((game.result1 === 'Scissors') && (game.result2 === 'Paper'))){     
+        console.log(`${game.result1} vs ${game.result2}: ${game.player1} wins!`); 
         game.score1 = score1++;
     } else {
+        console.log(`${game.result1} vs ${game.result2}: ${game.player2} wins!`); 
         score2++; 
-        console.log("Berta");
+        
     }
     game.score1 = score1;
-
     game.score2 = score2;
+    console.log(game);
 }
 
 game1.play();
 game2.play();
-console.log(game1);
-console.log(game2);
+game3.play();
 
-let score1 = 0;
-let score2 = 0;
 rockPaperScissors(game1);
 rockPaperScissors(game2);
-console.log(game1);
-console.log(game2);
-while (sco)
-    let game3 = new Game (player1.name, player2.name);
-    game3.play();
-    rockPaperScissors(game3);
-    console.log(game3);
+rockPaperScissors(game3);
+
+class Singleton {
+    static instancia;
+    scoreboard = '';
+
+    constructor(scoreboard ='') {
+        if (!!Singleton.instancia) {
+            return Singleton.instancia;
+        }
+
+        Singleton.instancia = this;
+        this.scoreboard = scoreboard;
+
+        return this;
+    }
+}  
+
+const final = new Singleton(`${game3.score1}-${game3.score2}`)
+
+if (game3.score1 > game3.score2) {
+    console.log(`The final result is: ${final.scoreboard}. ${player1.name} from ${player1.team} wins!`);
+} else if (game3.score1 < game3.score2) {
+    console.log(`The final result is: ${final.scoreboard}. ${player1.name} from ${player1.team} wins!`);
+} else {
+    console.log(`The final result is: ${final.scoreboard}. Nobody wins. Let's play again!`);
 }
-
-
-
-
