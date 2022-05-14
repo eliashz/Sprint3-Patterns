@@ -8,20 +8,8 @@ incials en cadascuna de les operacions. Invoca les execucions de la suma, la res
 de manera que es vagin mostrant per la consola les modificacions que es van fent als valors abans del 
 resultat final */
 
-import fs from 'fs';
+import app from ('./app');
 
-const sumRestMult = (operator1, operator2, operation) => {
-    if (operation === '+' && typeof(operator1) === 'number' && typeof(operator2) === 'number') {
-        console.log(typeof(operator1));
-        return operator1 + operator2;
-    } else if ((operation === '-') && typeof(operator1) === 'number' && typeof(operator2) === 'number') {
-        return operator1 - operator2;
-    } else if (operation === '*' && typeof(operator1) === 'number' && typeof(operator2) === 'number') {
-        return operator1 * operator2;
-    } else {
-        console.log("Error!");
-    }
-}
+const app = require ('./app');
 
-console.log(sumRestMult(15,2,'*'))
-
+app.listen(3000, () => console.log('API listening on port 3000.'));
