@@ -1,17 +1,21 @@
-class Middleware {
-  constructor (){
-    this.mw = [];
-  }
-  use(fn) {
-    this.mw.push(fn);
-  }
-  executeMw(data, done) {
-    this.mw.reduceRight((done, next) => next (data, done), done) (data);
 
+
+class Middleware {
+
+  constructor() {
+      this.middlewares = [];
   }
-  run(data) {
-    this.executeMw(data, done => console.log(data));
+
+  use(middleware) {
+      this.middlewares.push(middleware);
+  }
+  executeMiddleware(data, done) {
+      this.middlewares.reduceRight((done, next) => () => next(data, done), done)
+          (data);
+  }
+  createFn(fn) {
+      this.executeMiddleware(fn, done => console.log(fn));
   }
 };
- 
- module.exports = Middleware;
+
+module.exports = Middleware;
