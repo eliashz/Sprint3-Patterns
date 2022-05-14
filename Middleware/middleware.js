@@ -1,20 +1,17 @@
-import express from 'express';
-import fs from 'fs';
+class Middleware {
+  constructor (){
+    this.mw = [];
+  }
+  use(fn) {
+    this.mw.push(fn);
+  }
+  executeMw(data, done) {
+    this.mw.reduceRight((done, next) => next (data, done), done) (data);
 
-const app = express();
-
-//Middleware
-app.use((req, res, next) => {
-    const time = new Date().toISOString();
-    console.log(`[${time}] Request de tipus ${req.method} rebut`);
-    next();
-});
-
-app.get('/api', (req, res) => {
-    const data = fs.readFileSync('data.json', 'utf8');
-    res.send(data);
-});
-
-
-
-module.exports = middleware;
+  }
+  run(data) {
+    this.executeMw(data, done => console.log(data));
+  }
+};
+ 
+ module.exports = Middleware;

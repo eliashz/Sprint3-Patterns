@@ -8,8 +8,14 @@ incials en cadascuna de les operacions. Invoca les execucions de la suma, la res
 de manera que es vagin mostrant per la consola les modificacions que es van fent als valors abans del 
 resultat final */
 
-import app from ('./app');
+const Middleware = require("./middleware");
 
-const app = require ('./app');
+const datos = require('data.json');
 
-app.listen(3000, () => console.log('API listening on port 3000.'));
+const sumar = (op1, op2) => op1 + op2;
+
+const restar = (op1, op2) => op1 - op2;
+
+const multiplicar = (op1, op2) => op1 * op2;
+
+const app = new Middleware();
