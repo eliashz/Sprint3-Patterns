@@ -25,5 +25,5 @@ app.use((req, next) => {
 });
 
 //app.createFn(sumar(datos[0].op1, datos[0].op2));
-//app.createFn(restar(datos[1].op1, datos[1].op2));
-app.createFn(multiplicar(datos[2].op1, datos[2].op2));
+app.createFn(restar(datos[1].op1, datos[1].op2));
+//app.createFn(multiplicar(datos[2].op1, datos[2].op2));
