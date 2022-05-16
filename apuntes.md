@@ -21,3 +21,4 @@ Las funciones de **middleware** son funciones que tienen acceso al objeto de sol
 
 [Express Docs](https://expressjs.com/es/guide/using-middleware.html)  
 [Basic Middleware Pattern in JavaScript](https://javascript.plainenglish.io/basic-middleware-pattern-in-javascript-ef8756a75cb1)  
+[Complete Guide to Express Middleware](https://reflectoring.io/express-middleware/)  
