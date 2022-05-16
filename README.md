@@ -9,7 +9,7 @@ Descargar los archivos de la carpeta CallbackHell y ejecutar ``node 1_entrega31.
 Ejectutar el archivo ``2_entrega31.js``  
 
 
-## Entrega 3.1  
+## Entrega 3.2  
 
 ### Middleware  
 Descargar los archivos de la carpeta Middleware y ejecutar ``node 1_entrega32.js`` en la consola.
