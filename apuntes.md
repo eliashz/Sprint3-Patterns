@@ -12,8 +12,11 @@ Cuando se define una variable y no se le asigna valor sera *Undefined*.
 [Observer BettaTech](https://www.youtube.com/watch?v=HFkZb1g8faA&list=PLJkcleqxxobUJlz1Cm8WYd-F_kckkDvc8&index=9)  
 
 ## Decorator  
+Son funciones que permiten extender las clases.  
+[Repo](https://github.com/tc39/proposal-decorators)
+[Decorator midudev](https://youtu.be/LkOA07F9ZCs)
 [Decorator BettaTech](https://youtu.be/nLy4x_LPPWU)  
-[Decorator BettaTech Ejemplo](https://youtu.be/Ab9HxiPLryg) 
+[Decorator BettaTech Ejemplo en TypeScript](https://youtu.be/Ab9HxiPLryg) 
 
 ## Middleware  
 Express es una infraestructura web de direccionamiento y middleware que tiene una funcionalidad mínima propia: una aplicación Express es fundamentalmente una serie de llamadas a funciones de middleware.  

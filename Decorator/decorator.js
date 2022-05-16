@@ -1,4 +1,5 @@
+const data = require ('./currency_conversions.json')
 
-const decorator = () => {
-    
-}
+console.log(data.USD_EUR);
+
+module.exports = Decorator;
