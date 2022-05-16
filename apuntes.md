@@ -12,7 +12,8 @@ Cuando se define una variable y no se le asigna valor sera *Undefined*.
 [Observer BettaTech](https://www.youtube.com/watch?v=HFkZb1g8faA&list=PLJkcleqxxobUJlz1Cm8WYd-F_kckkDvc8&index=9)  
 
 ## Decorator  
-[Decorator BettaTech](https://www.youtube.com/watch?v=nLy4x_LPPWU&list=PLJkcleqxxobUJlz1Cm8WYd-F_kckkDvc8&index=7)  
+[Decorator BettaTech](https://youtu.be/nLy4x_LPPWU)  
+[Decorator BettaTech Ejemplo](https://youtu.be/Ab9HxiPLryg) 
 
 ## Middleware  
 Express es una infraestructura web de direccionamiento y middleware que tiene una funcionalidad mínima propia: una aplicación Express es fundamentalmente una serie de llamadas a funciones de middleware.  
@@ -22,3 +23,6 @@ Las funciones de **middleware** son funciones que tienen acceso al objeto de sol
 [Express Docs](https://expressjs.com/es/guide/using-middleware.html)  
 [Basic Middleware Pattern in JavaScript](https://javascript.plainenglish.io/basic-middleware-pattern-in-javascript-ef8756a75cb1)  
 [Complete Guide to Express Middleware](https://reflectoring.io/express-middleware/)  
+
+## Developers Team  
+[Flujo de trabajo de Gitflow](https://www.atlassian.com/es/git/tutorials/comparing-workflows/gitflow-workflow)
