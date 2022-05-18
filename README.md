@@ -13,3 +13,6 @@ Ejectutar el archivo ``2_entrega31.js``
 
 ### Middleware  
 Descargar los archivos de la carpeta Middleware y ejecutar ``node 1_entrega32.js`` en la consola.
+
+### Decorator  
+Descargar los archivos de la carpeta Decorator y ejecutar ``node 2_entrega32.js`` en la consola.
