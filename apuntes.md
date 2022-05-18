@@ -13,6 +13,8 @@ Cuando se define una variable y no se le asigna valor sera *Undefined*.
 
 ## Decorator  
 Son funciones que permiten extender las clases.  
+
+[JavaScript Decorators](https://www.sitepoint.com/javascript-decorators-what-they-are/)
 [Repo](https://github.com/tc39/proposal-decorators)
 [Decorator midudev](https://youtu.be/LkOA07F9ZCs)
 [Decorator BettaTech](https://youtu.be/nLy4x_LPPWU)  
