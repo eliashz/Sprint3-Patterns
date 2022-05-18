@@ -1,28 +1,15 @@
 //Nivell 2: Decorator
+const Articulo = require('./articulos');
+const Decorator = require('./decorator');
 
-const data = require ('./currency_conversions.json')
 
-console.log(data.USD_EUR);
+//Crear artículos llamando a la clase Articulos
+const camiseta = new Articulo('camiseta', 20, 'USD');
+const pantalon = new Articulo('pantalon', 30, 'GBP');
+const chaqueta = new Articulo('chaqueta', 40, 'JPY');
 
-module.exports = Decorator;
+const CamisetaDeco = new Decorator(camiseta);
+const PantalonDeco = new Decorator(pantalon);
+const ChaquetaDeco = new Decorator(chaqueta);
 
-let Multiply = (...args) => {
-  console.log(...args);
-  return args.reduce((a, b) => a * b)
-}
-
-// validated integers
-
-const Validator = (fn) => {
-  return function(...args) {
-    const validArgs = args.every(arg => Number.isInteger(arg));
-    if (!validArgs) {
-      throw new TypeError('Argument cannot be a non-integer');
-    }
-    return fn(...args);
-  }
-}
-
-//decorated multiply function that only multiplies integers
-MultiplyValidArgs = Validator(Multiply);
-MultiplyValidArgs(6, 8, 2, 10);
+CamisetaDeco.conversion()
