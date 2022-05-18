@@ -10,10 +10,8 @@ class Decorator {
     }
     conversion() { 
         const divisaConv = this.getArticulo().divisa + '_EUR';
-        console.log(divisaConv);
-        const totalConv = data.USD_EUR * this.getArticulo().precio;
-        console.log(data.USD_EUR);
-        console.log(`El cambio de ${this.getArticulo().divisa} a EUR es de ${totalConv}`);
+        const totalConv = data[divisaConv] * this.getArticulo().precio;
+        console.log(`El cambio de ${this.getArticulo().divisa} a EUR es de ${totalConv}.`);
     }
 }
 
