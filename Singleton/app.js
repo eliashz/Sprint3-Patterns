@@ -1,6 +1,5 @@
 //Nivell 2: Singleton
 
-const Singleton = require('./singleton');
 const Player = require('./player');
 const Game = require('./game')
 
@@ -37,12 +36,5 @@ rockPaperScissors(game1);
 rockPaperScissors(game2);
 rockPaperScissors(game3);
 
-const final = new Singleton(`${game3.score1}-${game3.score2}`)
+game3.saveScore();
 
-if (game3.score1 > game3.score2) {
-    console.log(`The final result is: ${final.scoreboard}. ${player1.name} from ${player1.team} wins!`);
-} else if (game3.score1 < game3.score2) {
-    console.log(`The final result is: ${final.scoreboard}. ${player1.name} from ${player1.team} wins!`);
-} else {
-    console.log(`The final result is: ${final.scoreboard}. Nobody wins. Let's play again!`);
-}
