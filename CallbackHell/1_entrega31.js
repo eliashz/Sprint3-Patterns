@@ -17,35 +17,33 @@ const {
     .reverse()
     .join("");
   
-  // Read and reverse contents of text files in a directory
-  
-/*    readdir(inbox, (error, files) => {
-    if (error) return console.log("Error: Folder inaccessible");
-    console.log(files)
-    files.forEach(file => {
-      readFile(join(inbox, file), "utf8", (error, data) => {
-        if (error) return console.log("Error: File error");
-        writeFile(join(outbox, file), reverseText(data), error => {
-          if (error) return console.log("Error: File could not be saved!");
-          console.log(`${file} was successfully saved in the outbox!`);
-        });
-      });
+const escribirArchivo = (data, file) => {
+    writeFile(join(outbox, file), reverseText(data), error => {
+        if (error) return console.log("Error: File could not be saved!");
+        console.log(`${file} was successfully saved in the outbox!`);
+    });  
+}
+
+const leerArchivo = (file) => {
+    readFile(join(inbox, file), "utf8", (error, data) => {
+        if (error) {
+            console.log("Error: File error");
+        } else {
+            escribirArchivo(data, file);
+        }
     });
-  });  */
-
-
+}
   
-const leerArchivo = () =>{
+const leerDirectorio = () =>{
     readdir(inbox, (error, files) => {
     if (error) {
         console.log("Error: Folder inaccessible");
     } else {
         files.forEach(file => {
-            //escribirArchivo();
-            console.log(file);
+            leerArchivo(file);
         });
     }   
     });
 }
 
-leerArchivo();
+leerDirectorio();

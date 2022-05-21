@@ -19,7 +19,6 @@ const reverseText = str =>
 
  readdir(inbox, (error, files) => {
   if (error) return console.log("Error: Folder inaccessible");
-  console.log(files)
   files.forEach(file => {
     readFile(join(inbox, file), "utf8", (error, data) => {
       if (error) return console.log("Error: File error");
