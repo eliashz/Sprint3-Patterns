@@ -35,6 +35,3 @@ game3.play();
 rockPaperScissors(game1);
 rockPaperScissors(game2);
 rockPaperScissors(game3);
-
-game3.saveScore();
-
