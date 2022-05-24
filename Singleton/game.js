@@ -14,11 +14,11 @@ class Game {
         const game = ['Rock', 'Paper', 'Scissors'];
         this.result1 = game[Math.floor(Math.random()*game.length)];
         this.result2 = game[Math.floor(Math.random()*game.length)];
-        const final = new Singleton([this.score1, this.score2]);
-        console.log(final);
+        const final = new Singleton({total1: this.result1, total2: this.result2});
+        console.log("---->", final);
 
         if (this.score1 > this.score2) {
-            console.log(`The final result is: ${final.scoreboard[1]}. ${this.player1} wins!`);
+            console.log(`The final result is: ${final.scoreboard}. ${this.player1} wins!`);
         } else if (this.score1 < this.score2) {
             console.log(`The final result is: ${final}. ${this.player2} wins!`);
         } else {

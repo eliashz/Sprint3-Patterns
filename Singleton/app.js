@@ -18,11 +18,12 @@ const rockPaperScissors = (game) => {
     if (game.result1 === game.result2) {
         console.log(`${game.result1} vs ${game.result2}: Draw!`); 
     } else if (((game.result1 === 'Rock') && (game.result2 === 'Scissors')) || ((game.result1 === 'Paper') && (game.result2 === 'Rock')) || ((game.result1 === 'Scissors') && (game.result2 === 'Paper'))){     
-        console.log(`${game.result1} vs ${game.result2}: ${game.player1} wins!`); 
         score1++;
+        console.log(`${game.result1} vs ${game.result2}: ${game.player1} wins!`); 
     } else {
+        score2++;
         console.log(`${game.result1} vs ${game.result2}: ${game.player2} wins!`); 
-        score2++;     
+           
     }
     game.score1 = score1;
     game.score2 = score2;
