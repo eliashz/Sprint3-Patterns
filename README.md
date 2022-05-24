@@ -8,14 +8,14 @@ Descargar los archivos de la carpeta *CallbackHell* y ejecutar ``node 1_entrega3
 ### Nivell 2: Singleton  
 Descargar la carpeta *Singleton* y ejectutar el archivo ``node app.js``.   
 + **app.js**: Archivo principal que ejecuta el programa.
-+ **player.js**: Clase que crea los jugadores.  
 + **game.js**: Clase que crea el juego. 
-+ **singleton.js**: Archivo que crea el singleton para el marcador final.  
++ **player.js**: Clase que crea los jugadores.  
++ **singleton.js**: Archivo que crea el singleton para el marcador final.    
 
 ## Entrega 3.2  
 
 ### Middleware  
-Descargar los archivos de la carpeta *Middleware* y ejecutar ``node 1_entrega32.js`` en la consola.
+~~Descargar los archivos de la carpeta *Middleware* y ejecutar ``node app.js`` en la consola.~~
 
 ### Decorator  
-Descargar los archivos de la carpeta *Decorator* y ejecutar ``node 2_entrega32.js`` en la consola.
+~~Descargar los archivos de la carpeta *Decorator* y ejecutar ``node app.js`` en la consola.~~
