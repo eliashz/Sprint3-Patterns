@@ -1,22 +1,32 @@
-const Middleware = require("./Middleware");
+const Middleware = require("./middleware");
+const Calculator = require("./calculator");
+const data = require('./data.json');
 
-const calculator = new Maths();
-//seteo de clase target en Middleware Manager
+const calculator = new Calculator();
+
 const app = new Middleware(calculator);
 
-//registro de middlewares en el Manager: el primer operando será multiplicado por 2 (pasamos function de middleware)
 app.use((req, next) => {
-  req.a = req.a * 2;
+  req.a = req.a ** 2;
+  req.b = req.b ** 2;
+  console.log(`${req.a} y ${req.b}`);
   next();
 });
 
-//el 2º operando será multiplicado por 3
 app.use((req, next) => {
-  req.b = req.b * 3;
+  req.a= req.a ** 3;
+  req.b = req.b ** 3;
+  console.log(`${req.a} y ${req.b}`);
   next();
 });
 
-//uso de clase target (OJO que se invoca el método de la clase target llamando al Manager -que no tiene explícitamente declarado el método-)
-console.log(app.add({a: 5, b: 10}));
-console.log(app.subtract({a: 10, b: 6}));
-console.log(app.multiply({a: 2, b: 3}));
+app.use((req, next) => {
+  req.a= req.a / 2;
+  req.b = req.b / 2;
+  console.log(`${req.a} y ${req.b}`);
+  next();
+});
+
+console.log(app.add(data[0]));
+console.log(app.subtract(data[1]));
+console.log(app.multiply(data[2])); 

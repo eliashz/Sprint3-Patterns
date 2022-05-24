@@ -25,6 +25,7 @@ Express es una infraestructura web de direccionamiento y middleware que tiene un
 
 Las funciones de **middleware** son funciones que tienen acceso al objeto de solicitud (req), al objeto de respuesta (res) y a la siguiente función de middleware en el ciclo de solicitud/respuestas de la aplicación. La siguiente función de middleware se denota normalmente con una variable denominada next.  
 
+[MW Portugués](https://www.youtube.com/watch?v=E5JaeELl2RE)  
 [Express Docs](https://expressjs.com/es/guide/using-middleware.html)  
 [Basic Middleware Pattern in JavaScript](https://javascript.plainenglish.io/basic-middleware-pattern-in-javascript-ef8756a75cb1)  
 [Complete Guide to Express Middleware](https://reflectoring.io/express-middleware/)  

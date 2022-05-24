@@ -1,4 +1,4 @@
-class Maths {
+class Calculator {
     add({a, b}) {
       return a + b;
     }
@@ -10,4 +10,4 @@ class Maths {
     }
   }
 
-module.exports = Maths;
+module.exports = Calculator;
