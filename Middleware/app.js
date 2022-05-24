@@ -27,6 +27,6 @@ app.use((req, next) => {
   next();
 });
 
-console.log(app.add(data[0]));
-console.log(app.subtract(data[1]));
-console.log(app.multiply(data[2])); 
+//console.log(app.add(data[0]));
+//console.log(app.subtract(data[1]));
+console.log(app.multiply(data[0])); 
