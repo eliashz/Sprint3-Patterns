@@ -6,7 +6,7 @@
 Descargar los archivos de la carpeta *CallbackHell* y ejecutar ``node 1_entrega31.js`` en la consola.  
 
 ### Nivell 2: Singleton  
-Descargar la carpeta *Singleton* y ejectutar el archivo ``app.js``.   
+Descargar la carpeta *Singleton* y ejectutar el archivo ``node app.js``.   
 
 
 ## Entrega 3.2  
