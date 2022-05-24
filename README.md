@@ -7,7 +7,10 @@ Descargar los archivos de la carpeta *CallbackHell* y ejecutar ``node 1_entrega3
 
 ### Nivell 2: Singleton  
 Descargar la carpeta *Singleton* y ejectutar el archivo ``node app.js``.   
-
++ **app.js**: Archivo principal que ejecuta el programa.
++ **player.js**: Clase que crea los jugadores.  
++ **game.js**: Clase que crea el juego. 
++ **singleton.js**: Archivo que crea el singleton para el marcador final.  
 
 ## Entrega 3.2  
 
