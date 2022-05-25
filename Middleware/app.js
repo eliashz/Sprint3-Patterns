@@ -28,6 +28,10 @@ app.use((req, next) => {
   next();
 });
 
-console.log("Suma", app.add(data[0]));
-console.log("Resta", app.subtract(data[1]));
-console.log("Multiplicación", app.multiply(data[0])); 
+console.log("Suma sin Middleware", calculator.add(data[0]));
+console.log("Resta sin Middleware", calculator.subtract(data[1]));
+console.log("Multiplicación sin Middleware", calculator.multiply(data[2])); 
+
+console.log("Suma con Middleware", app.add(data[0]));
+console.log("Restacon con Middleware", app.subtract(data[1]));
+console.log("Multiplicación con con Middleware", app.multiply(data[2])); 
