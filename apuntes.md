@@ -30,5 +30,8 @@ Las funciones de **middleware** son funciones que tienen acceso al objeto de sol
 [Basic Middleware Pattern in JavaScript](https://javascript.plainenglish.io/basic-middleware-pattern-in-javascript-ef8756a75cb1)  
 [Complete Guide to Express Middleware](https://reflectoring.io/express-middleware/)  
 
+## RabbitMQ  
+[RabbitMQ AMQP en Node.JS || Crea COLAS (queues) PRODUCERS y CONSUMERS](https://www.youtube.com/watch?v=jmxsswls0jk)
+
 ## Developers Team  
 [Flujo de trabajo de Gitflow](https://www.atlassian.com/es/git/tutorials/comparing-workflows/gitflow-workflow)
