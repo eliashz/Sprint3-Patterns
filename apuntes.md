@@ -31,6 +31,7 @@ Las funciones de **middleware** son funciones que tienen acceso al objeto de sol
 [Complete Guide to Express Middleware](https://reflectoring.io/express-middleware/)  
 
 ## RabbitMQ  
+[How to Build a Simple Message Queue in Node.js and RabbitMQ](https://morioh.com/p/8bc4fb039a9a)
 [RabbitMQ AMQP en Node.JS || Crea COLAS (queues) PRODUCERS y CONSUMERS](https://www.youtube.com/watch?v=jmxsswls0jk)
 
 ## Developers Team  
