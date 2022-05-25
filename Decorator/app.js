@@ -7,7 +7,7 @@ const camiseta = new Articulo('camiseta', 20, 'USD');
 const pantalon = new Articulo('pantalon', 30, 'GBP');
 const chaqueta = new Articulo('chaqueta', 40, 'JPY');
 
-const CamisetaDeco = decorator(camiseta);
-const PantalonDeco = decorator(pantalon);
-const ChaquetaDeco = decorator(chaqueta);
-
+//Llamas a la función que decora
+decorator(camiseta);
+decorator(pantalon);
+decorator(chaqueta);
