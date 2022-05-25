@@ -23,7 +23,6 @@ app.use((req, next) => {
 app.use((req, next) => {
   req.a= req.a / 2;
   req.b= req.b / 2;
-
   console.log(`Middleware división: ${req.a} y ${req.b}`);
   next();
 });
