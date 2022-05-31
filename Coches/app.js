@@ -9,22 +9,21 @@ const coche6 = new Coche('Peugeot', 'B-6666-B', '1200cc', 'Rojo', 'electrico');
 
 let arrayCoches = [coche1, coche2, coche3, coche4, coche5, coche6];
 
-
-for (let i = 0; i < arrayCoches.length; i++) {
-    if ((i % 2 == 0) || (i == 0)){
-        arrayCoches[i].cambiarColor('azul');
+for (const [key, value] of arrayCoches.entries()) {
+    if ((key % 2 === 0) || (key === 0)){
+        value.cambiarColor('azul');
     } else {
-        arrayCoches[i].cambiarColor('rojo');
+        value.cambiarColor('rojo');
     }
-    if (arrayCoches[i].combustible == 'gasolina') {
-        console.log(`Marca: ${arrayCoches[i].marca} y matrícula: ${arrayCoches[i].matricula}`);
-    }   
+    if (value.combustible == 'gasolina') {
+        console.log(`Marca: ${value.marca} y matrícula: ${value.matricula}`);
+    }  
 }
 
 try {
     const coche7 = new Coche('Peugeot', 'B-6666-B', '1200cc', 'Rojo', 'agua');
 } catch (error) {
     console.log(error);
-}
+} 
 
 console.table(arrayCoches);
