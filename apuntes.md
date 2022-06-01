@@ -7,6 +7,8 @@ Un **singleton** es una instancia única de una clase. Aunque se aplique *New* m
 Cuando se define una variable y no se le asigna valor sera *Undefined*.  
 [Singleton Fernando Herrera](https://www.youtube.com/watch?v=rrWRhrdwuLg)  
 [Singleton BettaTech](https://www.youtube.com/watch?v=GGq6s7xhHzY)  
+[Singleton Pattern con Javascript](https://medium.com/@jesusmurfontanals/singleton-pattern-con-javascript-3eb1c03f184e)  
+![Singleton](sngltn.png)  
 
 ## Observer  
 [Observer BettaTech](https://www.youtube.com/watch?v=HFkZb1g8faA&list=PLJkcleqxxobUJlz1Cm8WYd-F_kckkDvc8&index=9)  
@@ -14,9 +16,9 @@ Cuando se define una variable y no se le asigna valor sera *Undefined*.
 ## Decorator  
 Son funciones que permiten extender las clases.  
 
-[JavaScript Decorators](https://www.sitepoint.com/javascript-decorators-what-they-are/)
-[Repo](https://github.com/tc39/proposal-decorators)
-[Decorator midudev](https://youtu.be/LkOA07F9ZCs)
+[JavaScript Decorators](https://www.sitepoint.com/javascript-decorators-what-they-are/)  
+[Repo](https://github.com/tc39/proposal-decorators)  
+[Decorator midudev](https://youtu.be/LkOA07F9ZCs)  
 [Decorator BettaTech](https://youtu.be/nLy4x_LPPWU)  
 [Decorator BettaTech Ejemplo en TypeScript](https://youtu.be/Ab9HxiPLryg) 
 
@@ -31,8 +33,8 @@ Las funciones de **middleware** son funciones que tienen acceso al objeto de sol
 [Complete Guide to Express Middleware](https://reflectoring.io/express-middleware/)  
 
 ## RabbitMQ  
-[How to Build a Simple Message Queue in Node.js and RabbitMQ](https://morioh.com/p/8bc4fb039a9a)
-[RabbitMQ AMQP en Node.JS || Crea COLAS (queues) PRODUCERS y CONSUMERS](https://www.youtube.com/watch?v=jmxsswls0jk)
+[How to Build a Simple Message Queue in Node.js and RabbitMQ](https://morioh.com/p/8bc4fb039a9a)  
+[RabbitMQ AMQP en Node.JS || Crea COLAS (queues) PRODUCERS y CONSUMERS](https://www.youtube.com/watch?v=jmxsswls0jk)  
 
 ## Developers Team  
 [Flujo de trabajo de Gitflow](https://www.atlassian.com/es/git/tutorials/comparing-workflows/gitflow-workflow)
