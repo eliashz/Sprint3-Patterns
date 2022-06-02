@@ -11,6 +11,7 @@ Cuando se define una variable y no se le asigna valor sera *Undefined*.
 ![Singleton](sngltn.png)  
 
 ## Observer  
+Se usa para notificar cambios de estado a algún objeto.  
 [Observer BettaTech](https://www.youtube.com/watch?v=HFkZb1g8faA&list=PLJkcleqxxobUJlz1Cm8WYd-F_kckkDvc8&index=9)  
 
 ## Decorator  

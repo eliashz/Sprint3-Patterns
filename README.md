@@ -13,7 +13,9 @@ Descargar la carpeta *Singleton* y ejectutar el archivo ``node app.js``.
 + **singleton.js**: Archivo que crea el Singleton para el marcador final.  
 
 ### ~~Nivell 3: Observer~~ 
-[npm events](https://www.npmjs.com/package/events)
+Pasos previos a la ejecución del programa: 
++ Descargar la carpeta *Observer*.  
++ Ejecutar desde consola el comando `npm i` para la instalación del paquete [npm events](https://www.npmjs.com/package/events).  
 
 ## Entrega 3.2  
 
