@@ -10,8 +10,7 @@
 //TODO crear un tema con un usuario y otro tema con dos
 //TODO mostrar recepcion de los mensajes por los usuarios
 
-const { Tema, TextoTema, Observer } = require('./observer');
-const Usuario = require('./usuario');
+const { Tema, Usuario } = require('./observer');
 
 /* let EventEmitter = require('events');
 
@@ -22,8 +21,28 @@ ee.on('message', function (text) {
 })
 ee.emit('message', 'hello world'); */
 
-const textoTema = new TextoTema();
+/* const textoTema = new TextoTema();
 const usuario1 = new Usuario();
 textoTema.subscribe(usuario1)
 
-textoTema.notify();
+textoTema.notify(); */
+
+//Crea un Tema amb un Usuari i mostra la recepció dels missatges pel usuari.
+const tema1 = new Tema();
+const usuario1 = new Usuario('Usuario 1');
+
+tema1.suscribir(usuario1);
+
+usuario1.notificar1('Hola')
+
+// Crea un Tema amb dos Usuaris i mostra la recepció dels missatges pels usuaris.
+
+/* const tema2 = new Tema();
+const usuario2 = new Usuario('Usuario 2');
+const usuario3 = new Usuario('Usuario 3');
+
+tema2.suscribir(usuario2);
+tema2.suscribir(usuario3);
+
+usuario2.notificar('Adiós')
+ */

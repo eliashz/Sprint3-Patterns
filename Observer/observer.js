@@ -5,35 +5,42 @@ class Tema {
     constructor() {
         this.observers = [];
     }
-    subscribe(o) {
+    suscribir(o) {
         this.observers.push(o);
     }
-    ubsubscribe(o) {
-        this.observers = this.observers.filter(e => e!=0);
-    }
 
-    notify(model) {
+    notificar2(model) {
         this.observers.forEach(observer => {
-            observer.notify(model);
+            observer.notificar(model);
+            console.log("Mensaje enviado", model);
         })
     }
 }
 
-class TextoTema extends Tema {
+/* class TextoTema extends Tema {
     constructor() {
         super();
-        this.text = '';
+        this.texto = '';
     }
-    notify() {
-        this.text = text;
-        super.notify(this);
+    notificar(texto) {
+        this.texto = texto;
+        super.notificar(this);
     }
-}
+} */
 
-class Usuario {
-    notify(tema) {
-        console.log(tema);
+class Usuario extends Tema {
+    constructor (nombre) {
+        super();
+        this.nombre = nombre;
+    }
+  /*   notificar(tema) {
+        console.log(`Mensaje: ${tema} de ${this.nombre}`);
+    } */
+    notificar1(texto) {
+        this.texto = texto;
+        super.notificar2(this.texto);
+        console.log(`${this.texto} de ${this.nombre}`);
     }
 } 
 
-module.exports = { Tema, TextoTema, Usuario };
+module.exports = { Tema, Usuario };
