@@ -1,7 +1,7 @@
 /**
  * 
  */
-class Subject {
+class Tema {
     constructor() {
         this.observers = [];
     }
@@ -19,7 +19,7 @@ class Subject {
     }
 }
 
-class TextSubject extends Subject {
+class TextoTema extends Tema {
     constructor() {
         super();
         this.text = '';
@@ -29,3 +29,11 @@ class TextSubject extends Subject {
         super.notify(this);
     }
 }
+
+class Usuario {
+    notify(tema) {
+        console.log(tema);
+    }
+} 
+
+module.exports = { Tema, TextoTema, Usuario };

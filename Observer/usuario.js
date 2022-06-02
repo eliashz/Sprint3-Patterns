@@ -3,5 +3,3 @@ class Usuario {
         this.nombre = nombre;
     }
 }
-
-module.exports = Usuario;

@@ -10,10 +10,20 @@
 //TODO crear un tema con un usuario y otro tema con dos
 //TODO mostrar recepcion de los mensajes por los usuarios
 
-let EventEmitter = require('events');
+const { Tema, TextoTema, Observer } = require('./observer');
+const Usuario = require('./usuario');
+
+/* let EventEmitter = require('events');
+
 
 let ee = new EventEmitter()
 ee.on('message', function (text) {
   console.log(text);
 })
-ee.emit('message', 'hello world');
+ee.emit('message', 'hello world'); */
+
+const textoTema = new TextoTema();
+const usuario1 = new Usuario();
+textoTema.subscribe(usuario1)
+
+textoTema.notify();
