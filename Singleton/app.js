@@ -15,12 +15,13 @@ game.play();
 game.play();
 game.play();
 
-const final = new Singleton({total1: game.score1, total2: game.score2});
+//const final = new Singleton({total1: game.score1, total2: game.score2});
 
-if (final.scoreboard.total1 > final.scoreboard.total2) {
+/* if (final.scoreboard.total1 > final.scoreboard.total2) {
     console.log(`The final result is: ${final.scoreboard.total1} - ${final.scoreboard.total2}. ${player1.name} from ${player1.team} wins!`);
 } else if (final.scoreboard.total1 < final.scoreboard.total2) {
     console.log(`The final result is: ${final.scoreboard.total1} - ${final.scoreboard.total2}. ${player2.name} from ${player2.team} wins!`);
 } else {
     console.log(`The final result is: ${final.scoreboard.total1} - ${final.scoreboard.total2}. Nobody wins. Let's play again!`);
-} 
+}  */
+
