@@ -28,7 +28,7 @@ Descargar los archivos de la carpeta *Decorator* y ejecutar ``node app.js`` en l
 + **currency_conversions.json**: Archivo json dado para realizar el ejercicio con diferentes tipos de conversiones de monedas. 
 + **decorator.js**: Modulo con el decorator. 
 
-### Nivel3: Publisher - Subscriber (RabbitMQ)  
+### ~~Nivel3: Publisher - Subscriber (RabbitMQ)~~
 Pasos previos a la ejecución del programa:  
 + Instalar [Erlang](https://github.com/erlang/otp/releases/download/OTP-25.0/otp_win64_25.0.exe).
 + Instalar [RabbitMQ](https://github.com/rabbitmq/rabbitmq-server/releases/download/v3.10.2/rabbitmq-server-3.10.2.exe).  
