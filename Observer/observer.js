@@ -9,7 +9,7 @@ class Tema {
         this.observers.push(o);
     }
 
-    notificar2(model) {
+    notificar(model) {
         this.observers.forEach(observer => {
             observer.notificar(model);
             console.log("Mensaje enviado", model);
@@ -36,9 +36,9 @@ class Usuario extends Tema {
   /*   notificar(tema) {
         console.log(`Mensaje: ${tema} de ${this.nombre}`);
     } */
-    notificar1(texto) {
+    notificar(texto) {
         this.texto = texto;
-        super.notificar2(this.texto);
+        super.notificar(this.texto);
         console.log(`${this.texto} de ${this.nombre}`);
     }
 } 

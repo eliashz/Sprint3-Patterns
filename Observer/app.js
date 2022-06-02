@@ -33,7 +33,7 @@ const usuario1 = new Usuario('Usuario 1');
 
 tema1.suscribir(usuario1);
 
-usuario1.notificar1('Hola')
+usuario1.notificar('Hola')
 
 // Crea un Tema amb dos Usuaris i mostra la recepció dels missatges pels usuaris.
 
