@@ -14,4 +14,4 @@ class Unica {
 
 const a = new Unica('a')
 const b = new Unica('b')
-console.log(a, b);
+console.log(a, b)
