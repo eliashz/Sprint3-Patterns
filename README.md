@@ -10,7 +10,10 @@ Descargar la carpeta *Singleton* y ejectutar el archivo ``node app.js``.
 + **app.js**: Archivo principal que ejecuta el programa.
 + **game.js**: Clase que crea el juego. 
 + **player.js**: Clase que crea los jugadores.  
-+ **singleton.js**: Archivo que crea el Singleton para el marcador final.    
++ **singleton.js**: Archivo que crea el Singleton para el marcador final.  
+
+### ~~Nivell 3: Observer~~ 
+[npm events](https://www.npmjs.com/package/events)
 
 ## Entrega 3.2  
 
