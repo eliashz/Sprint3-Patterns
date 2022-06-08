@@ -26,11 +26,14 @@ Son funciones que permiten extender las clases.
 [Decorator BettaTech Ejemplo en TypeScript](https://youtu.be/Ab9HxiPLryg) 
 
 ## Middleware  
+El middleware permite conectar dos aplicaciones y hacer que los datos pasen de una a otra. Así, un ejemplo claro son las bases de datos y los datos que hay en ellas.  
+ 
 Express es una infraestructura web de direccionamiento y middleware que tiene una funcionalidad mínima propia: una aplicación Express es fundamentalmente una serie de llamadas a funciones de middleware.  
 
 Las funciones de **middleware** son funciones que tienen acceso al objeto de solicitud (req), al objeto de respuesta (res) y a la siguiente función de middleware en el ciclo de solicitud/respuestas de la aplicación. La siguiente función de middleware se denota normalmente con una variable denominada next.  
 
 [MW Portugués](https://www.youtube.com/watch?v=E5JaeELl2RE)  
+[Middleware Ejemplos](https://www.nts-solutions.com/blog/middleware-ejemplos.html)
 [Express Docs](https://expressjs.com/es/guide/using-middleware.html)  
 [Basic Middleware Pattern in JavaScript](https://javascript.plainenglish.io/basic-middleware-pattern-in-javascript-ef8756a75cb1)  
 [Complete Guide to Express Middleware](https://reflectoring.io/express-middleware/)  
