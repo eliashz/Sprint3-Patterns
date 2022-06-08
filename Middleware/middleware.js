@@ -11,6 +11,7 @@ class Middleware {
     }
     use(middleware) {
       this.middlewares.push(middleware);
+      console.log(middleware);
     }
     executeMiddleware(i = 0) {
       if (i < this.middlewares.length) {
