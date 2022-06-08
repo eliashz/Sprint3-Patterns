@@ -27,7 +27,8 @@ class Game {
         }
         if (score1 + score2 + draw === 3) {
             this.final.scoreboard = {total1: score1, total2: score2}; //Instanciar el Singleton al final de 3 partidas.
-            console.log("Final result: ", this.final);
+            console.log('------- Final result -------');
+            console.table(this.final);
         }
     }
 }
