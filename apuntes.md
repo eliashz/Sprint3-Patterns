@@ -16,6 +16,7 @@ Se usa para notificar cambios de estado a algún objeto.
 [Observer BettaTech](https://www.youtube.com/watch?v=HFkZb1g8faA&list=PLJkcleqxxobUJlz1Cm8WYd-F_kckkDvc8&index=9)  
 [Ejemplo: Patrón observador en Javascript](https://www.youtube.com/watch?v=pReYTx2frTQ)  
 [Node Events Tutorial | Node.js Tutorials for Beginners](https://www.youtube.com/watch?v=2vaTy4dkbJM)  
+[Event Module Traversy Media (min 47)](https://youtu.be/fBNz5xF-Kx4?t=2820)
 
 ## Decorator  
 Son funciones que permiten extender las clases.  
