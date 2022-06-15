@@ -11,9 +11,9 @@ let arrayCoches = [coche1, coche2, coche3, coche4, coche5, coche6];
 
 for (const [key, value] of arrayCoches.entries()) {
     if ((key % 2 === 0) || (key === 0)){
-        value.cambiarColor('azul');
+        value.color = 'azul';
     } else {
-        value.cambiarColor('rojo');
+        value.color = 'rojo';
     }
     if (value.combustible == 'gasolina') {
         console.log(`Marca: ${value.marca} y matrícula: ${value.matricula}`);

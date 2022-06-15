@@ -7,13 +7,13 @@ arrayOperaciones = [
     new Matematicas(0, 0, '*'),
     new Matematicas(1, 2, '/')
 ];
-arrayOperaciones[1].cambiarDatos(undefined, undefined, '*');
-arrayOperaciones[3].cambiarDatos(3, 6);
+
+arrayOperaciones[1].operacion = '*'
+arrayOperaciones[3].op1 = 3;
+arrayOperaciones[3].op2 = 6;
 
 for (let index = 0; index < arrayOperaciones.length; index++) {
     console.log("Resultado", arrayOperaciones[index].calcular()); 
 } 
 
-
 console.table(arrayOperaciones);
-

@@ -18,16 +18,10 @@ class Matematicas {
         } else if (this.operacion === '*'){
             return this.op1 * this.op2;
         } else if (this.operacion === '/'){
-            return this.op1 * this.op2;
+            return this.op1 / this.op2;
         } else if (this.operacion === '%'){
-            return this.op1 * this.op2;
+            return this.op1 % this.op2;
         } 
-    }
-    
-    cambiarDatos(nuevoOp1=this.op1, nuevoOp2=this.op2, nuevaOperacion=this.operacion) {
-        this.op1 = nuevoOp1;
-        this.op2 = nuevoOp2;
-        this.operacion = nuevaOperacion;
     }
 }
 

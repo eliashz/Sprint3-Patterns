@@ -10,9 +10,6 @@ class Coche {
             console.log("error");
         }
     }
-    cambiarColor(colorNuevo) {
-        this.color = colorNuevo;
-    }
 }
 
 module.exports = Coche;
